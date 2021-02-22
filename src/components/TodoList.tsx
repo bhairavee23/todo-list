@@ -16,7 +16,10 @@ const TodoList = (props: TodoListProps) => {
     const [completedTodos, setCompletedTodos] = useState<Todo[]>([]);
 
     useEffect(() => {
-        setCurrentTodos(todos);
+        const priorityOrder = ["HIGH", "MEDIUM", "LOW"];
+        console.log(todos.sort((a,b) => priorityOrder.indexOf(a.todoPriority) - priorityOrder.indexOf(b.todoPriority)));
+
+        setCurrentTodos(todos.sort((a,b) => priorityOrder.indexOf(a.todoPriority) - priorityOrder.indexOf(b.todoPriority)));
         setCompletedTodos([]);
     },[todos]);
 
@@ -55,21 +58,16 @@ const TodoList = (props: TodoListProps) => {
                                 />
                             </InputGroup.Prepend>
                             <InputGroup.Prepend>
-                                <InputGroup.Text className="priority" id="priority">{t.todoPriority}</InputGroup.Text>
+                                <InputGroup.Text 
+                                    className="priority" 
+                                    id="priority">
+                                        {t.todoPriority}
+                                </InputGroup.Text>
                             </InputGroup.Prepend>
                             <FormControl
                             name="todoLabel"
                             value={t.todoLabel}
-                            placeholder="What are you doing today?"
-                            aria-label="What are you doing today?"
-                            // onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                            //     setTodo({...todo, todoLabel: e.target.value});
-                            // }}
-                            // onKeyUp={(e: React.KeyboardEvent<HTMLDivElement>) => {
-                            //     if(e.key === 'Enter' && todo.todoLabel !== "") {
-                            //         submitTodo();       
-                            //     }
-                            // }}
+                            aria-label={t.todoLabel}
                             />
                             <InputGroup.Append>
                             <Button variant="outline-danger" 
