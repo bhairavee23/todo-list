@@ -1,12 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './App';
+import { TodoContainer } from './TodoContainer';
 
-describe('Test App', () => {
+
+describe('Test TodoContainer', () => {
 
     it("should match snapshot", ()=> {
         const tree = renderer.create(
-            <App/>
+            <TodoContainer/>
         ).toJSON();
         expect(tree).toMatchSnapshot(); 
     });       

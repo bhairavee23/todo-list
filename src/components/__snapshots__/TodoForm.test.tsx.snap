@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test TodoForm should match snapshot 1`] = `
+<div
+  className="w-50 mx-auto"
+>
+  <div
+    className="mb-3 input-group"
+  >
+    <div
+      className="input-group-prepend"
+    >
+      <div
+        className="dropdown input-group-append"
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle btn btn-outline-primary"
+          disabled={false}
+          id="priority-dropdown"
+          onClick={[Function]}
+          type="button"
+        >
+          MEDIUM
+        </button>
+      </div>
+    </div>
+    <input
+      aria-describedby=""
+      aria-label="What are you doing today?"
+      className="form-control"
+      name="todoLabel"
+      onChange={[Function]}
+      onKeyUp={[Function]}
+      placeholder="What are you doing today?"
+      value=""
+    />
+    <div
+      className="input-group-append"
+    >
+      <button
+        className="btn btn-outline-success"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Add Todo
+      </button>
+    </div>
+  </div>
+</div>
+`;

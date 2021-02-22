@@ -38,4 +38,6 @@ Also hosted on github pages :
   - Add a persistence to the application in form of database
   - Refactor the code to smaller, manageable components to make the application more easy to maintain 
   - Add ability to have more than one list and navigation to move from one list to another
+
+  - Needs more testing from Jest and Enzyme. Currently has a good snapshot tests to test the code
   

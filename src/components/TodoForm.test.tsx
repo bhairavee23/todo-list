@@ -1,12 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './App';
+import { TodoForm } from './TodoForm';
 
-describe('Test App', () => {
+describe('Test TodoForm', () => {
 
     it("should match snapshot", ()=> {
         const tree = renderer.create(
-            <App/>
+            <TodoForm
+                addTodo={() => {}}
+            />
         ).toJSON();
         expect(tree).toMatchSnapshot(); 
     });       

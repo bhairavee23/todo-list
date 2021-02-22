@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test TodoList should have two todos 1`] = `
+<div
+  className="w-50 mx-auto my-4"
+>
+  <div
+    className="py-3"
+  >
+    <h4>
+      Todo List: 
+    </h4>
+  </div>
+  <div>
+    <div
+      className="mb-3 input-group"
+      id="1"
+    >
+      <div
+        className="input-group-prepend"
+      >
+        <span
+          className="input-group-text"
+        >
+          <input
+            aria-label="Checkbox for todo"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </span>
+      </div>
+      <div
+        className="input-group-prepend"
+      >
+        <span
+          className="priority input-group-text"
+          id="priority"
+        >
+          MEDIUM
+        </span>
+      </div>
+      <input
+        aria-label="todo1"
+        className="form-control"
+        name="todoLabel"
+        value="todo1"
+      />
+      <div
+        className="input-group-append"
+      >
+        <button
+          className="btn btn-outline-danger"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Completed
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div
+      className="mb-3 input-group"
+      id="2"
+    >
+      <div
+        className="input-group-prepend"
+      >
+        <span
+          className="input-group-text"
+        >
+          <input
+            aria-label="Checkbox for todo"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </span>
+      </div>
+      <div
+        className="input-group-prepend"
+      >
+        <span
+          className="priority input-group-text"
+          id="priority"
+        >
+          LOW
+        </span>
+      </div>
+      <input
+        aria-label="todo1"
+        className="form-control"
+        name="todoLabel"
+        value="todo1"
+      />
+      <div
+        className="input-group-append"
+      >
+        <button
+          className="btn btn-outline-danger"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Completed
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Test TodoList should match snapshot 1`] = `
+<div
+  className="w-50 mx-auto my-4"
+>
+  <div
+    className="py-3"
+  >
+    <h4>
+      Todo List: 
+    </h4>
+  </div>
+  <div>
+    All things on this list are done!
+  </div>
+</div>
+`;
